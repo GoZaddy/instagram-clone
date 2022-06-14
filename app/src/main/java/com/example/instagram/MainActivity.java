@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         Bitmap rotatedBM = rotateBitmapOrientation(resizedFile.getPath());
                         postImage.setImageBitmap(rotatedBM);
                     } catch (IOException e) {
-                        Log.e(TAG, "error writing resized image to filesystem: "+e.getMessage(), e);
+                        Log.e(TAG, "error writing resized image to filesystem : "+e.getMessage(), e);
                     }
 
                 } else {
