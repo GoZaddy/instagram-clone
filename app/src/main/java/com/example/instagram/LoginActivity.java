@@ -12,10 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.instagram.databinding.ActivityLoginBinding;
-import com.example.instagram.databinding.ActivityMainBinding;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 public class LoginActivity extends AppCompatActivity {
