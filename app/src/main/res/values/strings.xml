@@ -9,5 +9,15 @@
     <string name="login_activity_username_text_field_hint">Username</string>
     <string name="main_activity_submit_button_text">Submit</string>
     <string name="main_activity_take_picture_button_text">Take picture</string>
+    <string name="item_post_avatar_content_description">Avatar of user</string>
+    <string name="item_post_image_content_description">Image attached to post</string>
+    <string name="template_like_text">205 likes</string>
+    <string name="bottom_navigation_home_title">Home</string>
+    <string name="bottom_navigation_add_title">Add</string>
+    <string name="bottom_navigation_person_title">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_username_edit_text_hint">Username</string>
+    <string name="login_password_edit_text_hint">Password</string>
 
 </resources>

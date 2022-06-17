@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,48 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/description_text_field"
+    <RelativeLayout
+        android:id="@+id/rlContainer"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="@string/main_activity_description_text_field_hint"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/post_image_view"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/post_image_view"
-        app:layout_constraintTop_toBottomOf="@+id/post_image_view" />
-
-    <Button
-        android:id="@+id/capture_image_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/main_activity_take_picture_button_text"
-        app:layout_constraintEnd_toEndOf="@+id/description_text_field"
-        app:layout_constraintStart_toStartOf="@+id/description_text_field"
-        app:layout_constraintTop_toBottomOf="@+id/description_text_field" />
-
-    <Button
-        android:id="@+id/submit_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="@string/main_activity_submit_button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/capture_image_button"
-        app:layout_constraintStart_toStartOf="@+id/capture_image_button" />
-
-    <ImageView
-        android:id="@+id/post_image_view"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="10dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
