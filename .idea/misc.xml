@@ -4,15 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.28940217391304346" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable/ic_ig_logo.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_outline_home_24.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable/ufi_heart_icon.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ufi_save_icon.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_compose.xml" value="0.2151268115942029" />
         <entry key="app/src/main/res/layout/activity_feed.xml" value="0.27048187255859374" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3460448626175668" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2173080444335938" />
         <entry key="app/src/main/res/layout/activity_post_details.xml" value="0.4099632373754529" />
         <entry key="app/src/main/res/layout/fragment_compose.xml" value="0.38240203857421873" />
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.2151268115942029" />
+        <entry key="app/src/main/res/layout/fragment_post_details.xml" value="0.21014492753623187" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.27247597023292824" />
         <entry key="app/src/main/res/layout/item_post.xml" value="0.3967864990234375" />
-        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.37864583333333335" />
+        <entry key="app/src/main/res/layout/item_profile_post.xml" value="0.2419110898618345" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.1" />
         <entry key="app/src/main/res/menu/meun_main.xml" value="0.335" />
         <entry key="app/src/main/res/xml/fileprovider.xml" value="0.18390514631685168" />

@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/login_button_text"
+        android:backgroundTint="@color/login_button_blue"
         app:layout_constraintEnd_toEndOf="@+id/password_text_field"
         app:layout_constraintStart_toStartOf="@+id/password_text_field"
         app:layout_constraintTop_toBottomOf="@+id/password_text_field" />
