@@ -25,6 +25,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.instagram.databinding.FragmentComposeBinding;
@@ -53,6 +54,7 @@ public class ComposeFragment extends Fragment {
     private Button captureImageButton;
     private File photoFile;
     private String photoFileName = "photo.jpg";
+    private ProgressBar progressBar;
 
     private static final String TAG = "MainActivity";
     private ParseUser currentUser;
@@ -89,6 +91,7 @@ public class ComposeFragment extends Fragment {
         postImage = binding.postImageView;
         captureImageButton = binding.captureImageButton;
         currentUser = ParseUser.getCurrentUser();
+        progressBar = binding.composeProgressBar;
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,8 +101,7 @@ public class ComposeFragment extends Fragment {
                     Toast.makeText(getContext(), "Description cannot be empty", Toast.LENGTH_SHORT).show();
                 } else {
                     savePost(descriptionTF.getText().toString());
-                    descriptionTF.setText("");
-                    postImage.setImageResource(0);
+
                 }
             }
         });
@@ -154,6 +156,7 @@ public class ComposeFragment extends Fragment {
     }
 
     private void savePost(String description){
+        showProgressBar();
         Post post = new Post();
 
         post.setDescription(description);
@@ -163,6 +166,9 @@ public class ComposeFragment extends Fragment {
         post.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
+                hideProgressBar();
+                descriptionTF.setText("");
+                postImage.setImageResource(0);
                 if (e != null){
                     Log.e(TAG, "error saving post", e);
                     Toast.makeText(getContext(), "Error saving post: "+e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -238,5 +244,13 @@ public class ComposeFragment extends Fragment {
         Bitmap rotatedBitmap = Bitmap.createBitmap(bm, 0, 0, bounds.outWidth, bounds.outHeight, matrix, true);
         // Return result
         return rotatedBitmap;
+    }
+
+    private void showProgressBar(){
+        progressBar.setVisibility(View.VISIBLE);
+    }
+
+    private void hideProgressBar(){
+        progressBar.setVisibility(View.GONE);
     }
 }

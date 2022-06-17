@@ -30,15 +30,15 @@ public class GetRelativeTime {
             } else if (diff < 2 * MINUTE_MILLIS) {
                 return "1 minute ago";
             } else if (diff < 50 * MINUTE_MILLIS) {
-                return diff / MINUTE_MILLIS + " minute ago";
+                return diff / MINUTE_MILLIS + " minutes ago";
             } else if (diff < 90 * MINUTE_MILLIS) {
                 return "1 hour ago";
             } else if (diff < 24 * HOUR_MILLIS) {
-                return diff / HOUR_MILLIS + " hour ago";
+                return diff / HOUR_MILLIS + " hours ago";
             } else if (diff < 48 * HOUR_MILLIS) {
                 return "yesterday";
             } else {
-                return diff / DAY_MILLIS + " day ago";
+                return diff / DAY_MILLIS + " days ago";
             }
         } catch (ParseException e) {
             Log.i(TAG, "getRelativeTimeAgo failed");

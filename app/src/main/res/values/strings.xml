@@ -17,5 +17,7 @@
     <string name="bottom_navigation_person_title">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_username_edit_text_hint">Username</string>
+    <string name="login_password_edit_text_hint">Password</string>
 
 </resources>

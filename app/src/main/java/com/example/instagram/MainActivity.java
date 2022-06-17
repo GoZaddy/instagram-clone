@@ -31,12 +31,6 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(LayoutInflater.from(this));
         setContentView(binding.getRoot());
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.nav_logo_whiteout);
-        getSupportActionBar().setTitle("");
-        getSupportActionBar().setElevation(0);
-
-
 
         final FragmentManager fragmentManager = getSupportFragmentManager();
 

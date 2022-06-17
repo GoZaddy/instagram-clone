@@ -30,6 +30,7 @@
             android:layout_marginStart="10dp"
             android:textColor="@android:color/black"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/profileAvatarIV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toEndOf="@+id/profileAvatarIV"
